@@ -19,6 +19,7 @@ RUN mkdir -p /home/hugo && \
   hugo && \
   apk add --no-cache \
   bash \
+  git \
   libcurl \
   libxml2 \
   libxslt \
@@ -33,6 +34,6 @@ WORKDIR /srv/hugo
 
 EXPOSE 1313
 
-CMD ["hugo","version"]
+CMD ["hugo",  "version"]
 
 # now you can run hugo and htmlproofer afterwards!
