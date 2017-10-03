@@ -1,7 +1,7 @@
 FROM ruby:2.4-alpine
 LABEL maintainer "Felipe Zipitria <fzipi@fing.edu.uy>"
 
-ENV HUGO_VERSION 0.25.1-r0
+ENV HUGO_VERSION 0.27.1-r0
 
 RUN echo 'gem: --no-document' >> /etc/gemrc
 
